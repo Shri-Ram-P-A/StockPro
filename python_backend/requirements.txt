@@ -1,0 +1,11 @@
+Flask
+yfinance
+numpy
+python-dotenv
+scikit-learn
+tensorflow
+newsapi-python
+langchain
+langchain-community
+langchain-google-genai
+faiss-cpu
