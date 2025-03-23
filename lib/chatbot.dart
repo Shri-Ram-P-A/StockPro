@@ -39,8 +39,7 @@ class _ChatScreenState extends State<ChatScreen> {
     String ans = "";
     if (symbol != null && symbol.isNotEmpty) {
       final uri = Uri.parse(
-          'http://10.11.9.122:8000/ask?symbol=$symbol&question=${Uri.encodeComponent(query)}'
-          // 'http://10.0.2.2:5000/ask?symbol=$symbol&question=${Uri.encodeComponent(query)}'
+          'http://10.0.2.2:5000/ask?symbol=$symbol&question=${Uri.encodeComponent(query)}'
           );
       
       try {
