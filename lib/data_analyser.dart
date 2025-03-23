@@ -35,8 +35,7 @@ class _StockAnalyzerPageState extends State<StockAnalyzerPage> {
       try {
       // Fetch actual stock data
       final response = await http.get(
-        // Uri.parse("http://10.0.2.2:5000/stock-info?symbol=$newSymbol"),
-        Uri.parse("http://10.11.9.122:8000/stock-info?symbol=$newSymbol"),
+        Uri.parse("http://10.0.2.2:5000/stock-info?symbol=$newSymbol"), // For emulator
       );
 
       if (response.statusCode == 200) {
@@ -61,8 +60,7 @@ class _StockAnalyzerPageState extends State<StockAnalyzerPage> {
     // Fetch predicted data
     try {
       final predictionResponse = await http.get(
-        Uri.parse("http://10.11.9.122:8000/predict?symbol=$newSymbol"),
-        // Uri.parse("http://10.0.2.2:5000/predict?symbol=$newSymbol"),
+        Uri.parse("http://10.0.2.2:5000/predict?symbol=$newSymbol"),
       );
 
       if (predictionResponse.statusCode == 200) {
