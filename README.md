@@ -75,4 +75,7 @@ waitress-serve --host 0.0.0.0 --port 8000 python_backend.main:app
 
 Linkedin: https://www.linkedin.com/in/shriram30704/
 
+# Disclaimer : Only for education purpose. not for market analysis.
+
+
 
